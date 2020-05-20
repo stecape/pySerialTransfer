@@ -175,7 +175,7 @@ class SerialTransfer(object):
         '''
         
         if type(val) == str:
-            val = val.encode()
+            val = val.encode("latin_1")
             format_str = '%ds' % len(val)
             
         elif type(val) == dict:
